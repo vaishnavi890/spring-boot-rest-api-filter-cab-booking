@@ -18,7 +18,7 @@ public class PaymentRepositoryImpl implements PaymentRepository {
     @Override
     public boolean store(Payment payment) {
         logger.info("Inside PaymentRepository.store()");
-        payment.setId((long) ++index);
+        payment.setId((int) ++index);
         paymentList.add(payment);
         return true;
     }

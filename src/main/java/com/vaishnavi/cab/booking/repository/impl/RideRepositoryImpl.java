@@ -1,6 +1,7 @@
 package com.vaishnavi.cab.booking.repository.impl;
 
 import com.vaishnavi.cab.booking.model.Ride;
+import com.vaishnavi.cab.booking.repository.RideRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;

@@ -18,7 +18,7 @@ public class RatingRepositoryImpl implements RatingRepository {
     @Override
     public boolean store(Rating rating) {
         logger.info("Inside RatingRepository.store()");
-        rating.setId((long) ++index);
+        rating.setId((int) ++index);
         ratingList.add(rating);
         return true;
     }

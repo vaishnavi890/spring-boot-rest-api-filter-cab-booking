@@ -10,6 +10,7 @@ public class Ride {
     private String status;
 
     public void setId(long l) {
+        
     }
 
     // Getters and Setters
