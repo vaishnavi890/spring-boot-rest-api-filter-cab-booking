@@ -13,6 +13,10 @@ public class Ride {
         
     }
 
+    public void setRideId(int i) {
+
+    }
+
     // Getters and Setters
 }
 

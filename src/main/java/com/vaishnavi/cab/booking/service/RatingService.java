@@ -4,10 +4,10 @@ import com.vaishnavi.cab.booking.model.Rating;
 import java.util.List;
 
 public interface RatingService {
-    boolean rateDriver(Rating rating);
     List<Rating> getAllRatings() throws Exception;
-    Rating getRatingById(int id) throws Exception;
-    boolean deleteRating(int id) throws Exception;
+    boolean addRating(Rating rating);
+    boolean deleteRating(int id);
+    Rating findRating(int id) throws Exception;
 }
 
 

@@ -37,6 +37,10 @@ public class Rating {
 
     public String getReview() { return review; }
     public void setReview(String review) { this.review = review; }
+
+    public void setRatingId(int i) {
+
+    }
 }
 
 

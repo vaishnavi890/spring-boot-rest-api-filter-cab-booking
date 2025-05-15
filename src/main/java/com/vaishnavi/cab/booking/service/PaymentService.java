@@ -4,10 +4,10 @@ import com.vaishnavi.cab.booking.model.Payment;
 import java.util.List;
 
 public interface PaymentService {
-    boolean makePayment(Payment payment);
     List<Payment> getAllPayments() throws Exception;
-    Payment getPaymentById(int id) throws Exception;
-    boolean cancelPayment(int id) throws Exception;
+    boolean addPayment(Payment payment);
+    boolean deletePayment(int id);
+    Payment findPayment(int id) throws Exception;
 }
 
 
