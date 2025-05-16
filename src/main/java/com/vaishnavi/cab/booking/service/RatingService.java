@@ -8,6 +8,12 @@ public interface RatingService {
     boolean addRating(Rating rating);
     boolean deleteRating(int id);
     Rating findRating(int id) throws Exception;
+
+    List<Rating> retrieveRatings();
+
+    boolean storeRating(Rating rating);
+
+    Rating searchRating(int id);
 }
 
 

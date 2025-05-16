@@ -8,6 +8,12 @@ public interface PaymentService {
     boolean addPayment(Payment payment);
     boolean deletePayment(int id);
     Payment findPayment(int id) throws Exception;
+
+    List<Payment> retrievePayments();
+
+    boolean storePayment(Payment payment);
+
+    Payment searchPayment(int id);
 }
 
 

@@ -48,6 +48,21 @@ public class RatingServiceImpl implements RatingService {
         if (rating == null) throw new RatingNotFoundException();
         return rating;
     }
+
+    @Override
+    public List<Rating> retrieveRatings() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeRating(Rating rating) {
+        return false;
+    }
+
+    @Override
+    public Rating searchRating(int id) {
+        return null;
+    }
 }
 
 

@@ -8,6 +8,12 @@ public interface CabService {
     boolean addCab(Cab cab);
     boolean deleteCab(int id);
     Cab findCab(int id) throws Exception;
+
+    List<Cab> retrieveCabs();
+
+    boolean storeCab(Cab cab);
+
+    Cab searchCab(int id);
 }
 
 

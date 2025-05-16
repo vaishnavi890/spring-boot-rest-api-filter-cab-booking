@@ -49,6 +49,21 @@ public class NotificationServiceImpl implements NotificationService {
         if (notification == null) throw new NotificationNotFoundException();
         return notification;
     }
+
+    @Override
+    public List<Notification> retrieveNotifications() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeNotification(Notification notification) {
+        return false;
+    }
+
+    @Override
+    public Notification searchNotification(int id) {
+        return null;
+    }
 }
 
 

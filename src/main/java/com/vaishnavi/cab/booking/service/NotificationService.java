@@ -8,5 +8,11 @@ public interface NotificationService {
     boolean addNotification(Notification notification);
     boolean deleteNotification(int id);
     Notification findNotification(int id) throws Exception;
+
+    List<Notification> retrieveNotifications();
+
+    boolean storeNotification(Notification notification);
+
+    Notification searchNotification(int id);
 }
 

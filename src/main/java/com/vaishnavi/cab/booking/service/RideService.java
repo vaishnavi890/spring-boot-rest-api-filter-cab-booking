@@ -8,5 +8,11 @@ public interface RideService {
     boolean addRide(Ride ride);
     boolean deleteRide(int id);
     Ride findRide(int id) throws Exception;
+
+    List<Ride> retrieveRides();
+
+    boolean storeRide(Ride ride);
+
+    Ride searchRide(int id);
 }
 

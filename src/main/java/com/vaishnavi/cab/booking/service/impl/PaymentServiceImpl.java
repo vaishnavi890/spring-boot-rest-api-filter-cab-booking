@@ -48,5 +48,20 @@ public class PaymentServiceImpl implements PaymentService {
         if (payment == null) throw new PaymentNotFoundException();
         return payment;
     }
+
+    @Override
+    public List<Payment> retrievePayments() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storePayment(Payment payment) {
+        return false;
+    }
+
+    @Override
+    public Payment searchPayment(int id) {
+        return null;
+    }
 }
 

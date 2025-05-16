@@ -49,6 +49,26 @@ public class BookingHistoryServiceImpl implements BookingHistoryService {
         if (booking == null) throw new BookingNotFoundException();
         return booking;
     }
+
+    @Override
+    public List<BookingHistory> retrieveBookingHistory() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeBookingHistory(BookingHistory history) {
+        return false;
+    }
+
+    @Override
+    public boolean deleteBookingHistory(int id) {
+        return false;
+    }
+
+    @Override
+    public BookingHistory searchBookingHistory(int id) {
+        return null;
+    }
 }
 
 

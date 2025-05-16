@@ -49,5 +49,20 @@ public class TransactionServiceImpl implements TransactionService {
         if (txn == null) throw new TransactionNotFoundException();
         return txn;
     }
+
+    @Override
+    public List<Transaction> retrieveTransactions() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeTransaction(Transaction transaction) {
+        return false;
+    }
+
+    @Override
+    public Transaction searchTransaction(int id) {
+        return null;
+    }
 }
 

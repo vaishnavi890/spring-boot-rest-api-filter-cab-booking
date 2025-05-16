@@ -8,5 +8,11 @@ public interface TransactionService {
     boolean addTransaction(Transaction transaction);
     boolean deleteTransaction(int id);
     Transaction findTransaction(int id) throws Exception;
+
+    List<Transaction> retrieveTransactions();
+
+    boolean storeTransaction(Transaction transaction);
+
+    Transaction searchTransaction(int id);
 }
 

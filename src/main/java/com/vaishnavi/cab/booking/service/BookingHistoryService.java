@@ -8,5 +8,13 @@ public interface BookingHistoryService {
     boolean addBooking(BookingHistory history);
     boolean deleteBooking(int id);
     BookingHistory findBooking(int id) throws Exception;
+
+    List<BookingHistory> retrieveBookingHistory();
+
+    boolean storeBookingHistory(BookingHistory history);
+
+    boolean deleteBookingHistory(int id);
+
+    BookingHistory searchBookingHistory(int id);
 }
 

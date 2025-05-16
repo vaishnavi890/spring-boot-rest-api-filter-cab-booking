@@ -48,6 +48,21 @@ public class CabServiceImpl implements CabService {
         if (cab == null) throw new CabNotFoundException();
         return cab;
     }
+
+    @Override
+    public List<Cab> retrieveCabs() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeCab(Cab cab) {
+        return false;
+    }
+
+    @Override
+    public Cab searchCab(int id) {
+        return null;
+    }
 }
 
 

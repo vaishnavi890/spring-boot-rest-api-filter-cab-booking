@@ -48,5 +48,20 @@ public class LocationServiceImpl implements LocationService {
         if (location == null) throw new LocationNotFoundException();
         return location;
     }
+
+    @Override
+    public List<Location> retrieveLocations() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeLocation(Location location) {
+        return false;
+    }
+
+    @Override
+    public Location searchLocation(int id) {
+        return null;
+    }
 }
 

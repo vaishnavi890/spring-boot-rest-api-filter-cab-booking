@@ -53,6 +53,21 @@ public class DriverServiceImpl implements DriverService {
         if (driver == null) throw new DriverNotFoundException();
         return driver;
     }
+
+    @Override
+    public List<Driver> retrieveDrivers() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeDriver(Driver driver) {
+        return false;
+    }
+
+    @Override
+    public Driver searchDriver(int id) {
+        return null;
+    }
 }
 
 

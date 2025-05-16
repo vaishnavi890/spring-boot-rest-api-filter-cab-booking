@@ -8,5 +8,11 @@ public interface LocationService {
     boolean addLocation(Location location);
     boolean deleteLocation(int id);
     Location findLocation(int id) throws Exception;
+
+    List<Location> retrieveLocations();
+
+    boolean storeLocation(Location location);
+
+    Location searchLocation(int id);
 }
 

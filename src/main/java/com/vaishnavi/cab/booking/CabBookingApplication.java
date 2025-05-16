@@ -8,24 +8,25 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@EnableScheduling
 @SpringBootApplication
-@EnableEurekaServer
-public class CabAppApplication implements CommandLineRunner {
+@EnableScheduling              // For scheduled tasks (e.g., notification, reports)
+@EnableEurekaServer           // Makes this a Eureka service registry
+public class CabBookingApplication implements CommandLineRunner {
 
-    private static final Logger logger = LoggerFactory.getLogger(CabAppApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(CabBookingApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(CabAppApplication.class, args);
+        SpringApplication.run(CabBookingApplication.class, args);
+        logger.info(" Cab Booking System started successfully!");
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         if (args.length == 0) {
-            logger.info("No arguments provided to CabAppApplication");
+            logger.info("No command-line arguments provided.");
         } else {
             for (String arg : args) {
-                logger.info("Startup argument: {}", arg);
+                logger.info("Argument received: {}", arg);
             }
         }
     }

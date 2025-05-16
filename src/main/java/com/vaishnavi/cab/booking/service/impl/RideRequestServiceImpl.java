@@ -49,5 +49,25 @@ public class RideRequestServiceImpl implements RideRequestService {
         if (req == null) throw new RideRequestNotFoundException();
         return req;
     }
+
+    @Override
+    public List<RideRequest> retrieveRideRequests() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeRideRequest(RideRequest rideRequest) {
+        return false;
+    }
+
+    @Override
+    public boolean deleteRideRequest(int id) {
+        return false;
+    }
+
+    @Override
+    public RideRequest searchRideRequest(int id) {
+        return null;
+    }
 }
 

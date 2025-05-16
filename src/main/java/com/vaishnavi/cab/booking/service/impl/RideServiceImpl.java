@@ -48,5 +48,20 @@ public class RideServiceImpl implements RideService {
         if (ride == null) throw new RideNotFoundException();
         return ride;
     }
+
+    @Override
+    public List<Ride> retrieveRides() {
+        return List.of();
+    }
+
+    @Override
+    public boolean storeRide(Ride ride) {
+        return false;
+    }
+
+    @Override
+    public Ride searchRide(int id) {
+        return null;
+    }
 }
 

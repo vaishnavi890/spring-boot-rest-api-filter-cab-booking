@@ -8,6 +8,12 @@ public interface DriverService {
     boolean addDriver(Driver driver);
     boolean deleteDriver(int id);
     Driver findDriver(int id) throws Exception;
+
+    List<Driver> retrieveDrivers();
+
+    boolean storeDriver(Driver driver);
+
+    Driver searchDriver(int id);
 }
 
 
